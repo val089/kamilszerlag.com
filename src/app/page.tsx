@@ -7,12 +7,7 @@ export default function Home() {
     <>
       <Header />
 
-      <div
-        id="home"
-        className="w-full h-screen bg-blue-100 items-center justify-center"
-      >
-        <HomePageIntro />
-      </div>
+      <HomePageIntro />
 
       <main>
         <section
