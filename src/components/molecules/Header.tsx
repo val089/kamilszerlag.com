@@ -17,8 +17,11 @@ export const Header = () => {
   };
 
   return (
-    <header className="flex items-center justify-between md:bg-white fixed top-4 z-10 container rounded-lg inset-x-0 mx-auto md:flex py-4">
-      <h1 className="font-bold text-lg pl-4">KAMIL SZERLAG</h1>
+    <header
+      className="
+    flex items-center justify-between md:bg-white fixed top-4 z-10 container rounded-lg inset-x-0 mx-auto md:flex py-4"
+    >
+      <h1 className="font-bold text-lg pl-4 hidden md:block">KAMIL SZERLAG</h1>
 
       {/* Desktop Navigation */}
 
@@ -37,7 +40,10 @@ export const Header = () => {
       </ul>
 
       {/* Mobile Navigation Icon */}
-      <div onClick={handleNav} className="block md:hidden pr-4">
+      <div
+        onClick={handleNav}
+        className="block md:hidden pr-4 absolute right-0"
+      >
         <div className="group flex h-12 w-12 cursor-pointer items-center justify-center rounded-3xl p-2 hover:bg-slate-300">
           <div className="space-y-2">
             <span
